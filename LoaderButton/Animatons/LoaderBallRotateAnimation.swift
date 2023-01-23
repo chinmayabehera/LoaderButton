@@ -80,7 +80,7 @@ class LoaderBallRotateAnimation: LoaderButtonAnimationDelegate {
                               width: sizeValue, height: sizeValue)
         layer.addSublayer(circle)
 
-        let timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        let timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
 
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.duration = 4.0

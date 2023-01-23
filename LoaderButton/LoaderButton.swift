@@ -173,7 +173,7 @@ public extension LoaderButton {
         animation.fromValue = bounds.width
         animation.toValue = bounds.height
         animation.duration = animationDuration
-        animation.fillMode = kCAFillModeBoth
+        animation.fillMode = CAMediaTimingFillMode.both
         animation.isRemovedOnCompletion = false
         layer.add(animation, forKey: animation.keyPath)
         self.perform(#selector(startLoader), with: nil, afterDelay: animationDuration)
@@ -207,7 +207,7 @@ public extension LoaderButton {
         animation.fromValue = frame.height
         animation.toValue = frame.width
         animation.duration = animationDuration
-        animation.fillMode = kCAFillModeForwards
+        animation.fillMode = CAMediaTimingFillMode.forwards
         animation.isRemovedOnCompletion = false
 
         layer.add(animation, forKey: animation.keyPath)

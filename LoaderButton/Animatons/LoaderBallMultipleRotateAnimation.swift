@@ -26,7 +26,7 @@ class LoaderBallMultipleRotateAnimation: LoaderButtonAnimationDelegate {
         let smallFrame: CGRect = CGRect(x: (kWidth - sizeValue * 0.5) * 0.5,
                                         y: (kWidth - sizeValue * 0.5) * 0.5,
                                         width: sizeValue * 0.5, height: sizeValue * 0.5)
-        let timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        let timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         let duration: CFTimeInterval = 1.0
         createCircle(with: .ringHorizontal, duration: duration, timingFunction: timingFunction, layer: layer, size: bigFrame.size, frame: bigFrame, color: color, reverse: false)
         createCircle(with: .ringVertical, duration: duration, timingFunction: timingFunction, layer: layer, size: smallFrame.size, frame: smallFrame, color: color, reverse: true)

@@ -30,7 +30,7 @@ class LoaderPacmanAnimation: LoaderButtonAnimationDelegate {
         let padding: CGFloat = 10
         let pacmanValue: CGFloat = sizeValue
         let pacmanDuration: CFTimeInterval = 0.5
-        let timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
+        let timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
 
         /// Stroke Start Animaition
         let startAnimation = CAKeyframeAnimation(keyPath: "strokeStart")
@@ -85,7 +85,7 @@ class LoaderPacmanAnimation: LoaderButtonAnimationDelegate {
         /// Animation
         let animation = CAAnimationGroup()
         animation.animations = [translateAnimaton, opacityAnimation]
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         animation.duration = circleDuration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = false

@@ -25,7 +25,7 @@ class LoaderLineFadeAnimation: LoaderButtonAnimationDelegate {
         let duration: CFTimeInterval = 1.2
         let beginTime = CACurrentMediaTime()
         let beginTimes: [CFTimeInterval] = [0.12, 0.24, 0.36, 0.48, 0.6, 0.72, 0.84, 0.96]
-        let timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        let timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
 
         /// animation
         let animation = CAKeyframeAnimation(keyPath: "opacity")
